@@ -3,7 +3,7 @@
 #include "smAlgorithm-lib.h"
 
 extern "C" JNIEXPORT void
-Java_com_voip_SMAlgorithm_SM2Init(
+Java_com_example_smalgorithm_SMAlgorithm_SM2Init(
         JNIEnv *env,
         jobject instance
 ) {
@@ -11,7 +11,7 @@ Java_com_voip_SMAlgorithm_SM2Init(
 }
 
 extern "C" JNIEXPORT void
-Java_com_voip_SMAlgorithm_SM2GenKey(
+Java_com_example_smalgorithm_SMAlgorithm_SM2GenKey(
         JNIEnv *env,
         jobject instance,
         jbyteArray priKey_, jintArray priKeyLen_,
@@ -35,7 +35,7 @@ Java_com_voip_SMAlgorithm_SM2GenKey(
 }
 
 extern "C" JNIEXPORT jint
-Java_com_voip_SMAlgorithm_SM2SignHash(
+Java_com_example_smalgorithm_SMAlgorithm_SM2SignHash(
         JNIEnv *env,
         jobject instance,
         jbyteArray hash_, jint iHashLen,
@@ -70,7 +70,7 @@ Java_com_voip_SMAlgorithm_SM2SignHash(
 }
 
 extern "C" JNIEXPORT jint
-Java_com_voip_SMAlgorithm_SM2VerifyHash(
+Java_com_example_smalgorithm_SMAlgorithm_SM2VerifyHash(
         JNIEnv *env,
         jobject instance,
         jbyteArray hash_, jint iHashLen,
@@ -107,7 +107,7 @@ Java_com_voip_SMAlgorithm_SM2VerifyHash(
 }
 
 extern "C" JNIEXPORT void
-Java_com_voip_SMAlgorithm_DotProduct(
+Java_com_example_smalgorithm_SMAlgorithm_DotProduct(
         JNIEnv *env,
         jobject instance,
         jbyteArray workKey_,
@@ -132,7 +132,7 @@ Java_com_voip_SMAlgorithm_DotProduct(
 }
 
 extern "C" JNIEXPORT void
-Java_com_voip_SMAlgorithm_sm3(
+Java_com_example_smalgorithm_SMAlgorithm_sm3(
         JNIEnv *env,
         jobject instance,
         jbyteArray data_, jint iLen, jbyteArray outData_
@@ -155,7 +155,7 @@ Java_com_voip_SMAlgorithm_sm3(
 }
 
 extern "C" JNIEXPORT void
-Java_com_voip_SMAlgorithm_sm3_1hmac(
+Java_com_example_smalgorithm_SMAlgorithm_sm3_1hmac(
         JNIEnv *env,
         jobject instance,
         jbyteArray key_, jint keyLen,
@@ -185,7 +185,7 @@ Java_com_voip_SMAlgorithm_sm3_1hmac(
 }
 
 extern "C" JNIEXPORT jint
-Java_com_voip_SMAlgorithm_Mode_1SMS4_1encrypt(
+Java_com_example_smalgorithm_SMAlgorithm_Mode_1SMS4_1encrypt(
         JNIEnv *env,
         jobject instance,
         jbyteArray key_, jint keyLen, jbyteArray iv_,
@@ -229,7 +229,7 @@ Java_com_voip_SMAlgorithm_Mode_1SMS4_1encrypt(
 }
 
 extern "C" JNIEXPORT jint
-Java_com_voip_SMAlgorithm_Mode_1SMS4_1decrypt(
+Java_com_example_smalgorithm_SMAlgorithm_Mode_1SMS4_1decrypt(
         JNIEnv *env,
         jobject instance,
         jbyteArray key_, jint keyLen, jbyteArray iv_,
